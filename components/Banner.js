@@ -22,6 +22,8 @@ const Banner = () => {
             width={300}
             height={250}
             className="banner-image"
+            priority={true}
+            loading="eager"
           />
         </div>
       </div>

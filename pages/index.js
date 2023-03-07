@@ -46,7 +46,7 @@ export default function Home() {
                 width={250}
                 height={250}
               />
-              <h3>I'm a great communicator!</h3>
+              <h3>I{`'`}m a great communicator!</h3>
               <p>
                 I really enjoy working amongst a team of motivated people. I
                 consider myself to be a team player and always have time for my
@@ -61,7 +61,7 @@ export default function Home() {
                 width={250}
                 height={250}
               />
-              <h3>I'm enthusiastic!</h3>
+              <h3>I{`'`}m enthusiastic!</h3>
               <p>
                 I am always willing to take on new challenges and give it my
                 all. This is something I am incredibly passionate about. The
@@ -255,7 +255,7 @@ export default function Home() {
               <h4>Ironhack Lisbon</h4>
               <h5>Top 3 Global Tech Academy</h5>
               <p>
-                I didn't take the most conventional route into Software
+                I didn{`'`}t take the most conventional route into Software
                 Engineering. I completed a Web Development Bootcamp set in the
                 heart of Lisbon, Portugal. During my time on the course I
                 covered a wide range of skills and coding languages. By the end
@@ -274,7 +274,7 @@ export default function Home() {
           >
             <p>
               The year I was born. The year Take That separated and the year
-              'Dolly' the sheep was born. What a time to be alive!
+              {`'`}Dolly{`'`} the sheep was born. What a time to be alive!
             </p>
           </TimeLineItem>
           <TimeLineItem
@@ -297,7 +297,7 @@ export default function Home() {
               I went to my first ever football match - Arsenal vs Southampton.
               Since my trip to this beautiful stadium, being an Arsenal fan has
               definitely become more and more painful over the years. I hope
-              that being a fan of this club won't be a dealbreaker!
+              that being a fan of this club won{`'`}t be a dealbreaker!
             </p>
           </TimeLineItem>
           <TimeLineItem
@@ -308,7 +308,7 @@ export default function Home() {
             <p>
               My first job was landed. I became a paperboy! Monday to Saturday
               at 6:30am I would make my way down to my local newsagents to
-              collect my round and get underway. Wasn't the dream role - but
+              collect my round and get underway. Wasn{`'`}t the dream role - but
               that £25 a week went a long way back then.
             </p>
           </TimeLineItem>
@@ -322,7 +322,7 @@ export default function Home() {
               I was (and still am) obsessed with football. Fortunately, I had
               the opportunity to play for Yeovil FC Academy. During this time I
               played against a number of academy teams at the highest level.
-              However, I didn't quite make the cut.
+              However, I didn{`'`}t quite make the cut.
             </p>
           </TimeLineItem>
           <TimeLineItem
@@ -331,8 +331,8 @@ export default function Home() {
             title={"2012"}
           >
             <p>
-              I had finished my GCSE's! I managed to get 11 GCSE's all A-C -
-              including an A in Maths, Biology and P.E. So to celebrate my
+              I had finished my GCSE{`'`}s! I managed to get 11 GCSE{`'`}s all
+              A-C - including an A in Maths, Biology and P.E. So to celebrate my
               exams, me and a few friends went to Cardiff for the Olympic Games
               to watch GB take on South Korea. Unfortunately, like most penalty
               shootouts England are involved in, they lost 5-4 on penalties.
@@ -350,10 +350,10 @@ export default function Home() {
               began selling Personal Training courses. However, I then moved
               into selling Software & Web Development training courses. Whilst
               working at The Training Room I worked with a team of Sales
-              Executives trying to help people change their career's and enter
-              into the world of IT. It was during this time that I started to
-              look into these areas myself and my interest in the sector began
-              to increase.
+              Executives trying to help people change their career{`'`}s and
+              enter into the world of IT. It was during this time that I started
+              to look into these areas myself and my interest in the sector
+              began to increase.
             </p>
           </TimeLineItem>
           <TimeLineItem

@@ -7,7 +7,7 @@ const Banner = () => {
         <div className="banner-grid">
           <div className="banner-text">
             <h1>Hello.</h1>
-            <h1>I'm Dan. I am a Web Developer.</h1>
+            <h1>I{`'`}m Dan. I am a Web Developer.</h1>
             <h1>This is why you should hire me at</h1>
             <h1>
               <span className="highlight">

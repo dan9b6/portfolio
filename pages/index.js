@@ -6,6 +6,7 @@ import Image from "next/image";
 import TimeLineItem from "../components/Timeline/Item";
 import TimeLineList from "../components/Timeline/List";
 import { useEffect } from "react";
+import Head from "next/head";
 
 export default function Home() {
   useEffect(() => {
@@ -34,6 +35,38 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>danburts</title>
+        <meta name="title" content="danburts" />
+        <meta
+          name="description"
+          content="Check out my personal CV site if you are looking for your next developer!"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.danburts.co.uk/" />
+        <meta property="og:title" content="danburts" />
+        <meta
+          property="og:description"
+          content="Check out my personal CV site if you are looking for your next developer!"
+        />
+        <meta
+          property="og:image"
+          content="https://www.danburts.co.uk/images/wave.gif"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.danburts.co.uk/" />
+        <meta property="twitter:title" content="danburts - CV website" />
+        <meta
+          property="twitter:description"
+          content="Check out my personal CV site if you are looking for your next developer!"
+        />
+        <meta
+          property="twitter:image"
+          content="https://www.danburts.co.uk/images/wave.gif"
+        />
+      </Head>
       <Banner />
       <Section className="offer">
         <div className="container">

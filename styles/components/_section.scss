@@ -36,6 +36,9 @@
   }
 
   &--about {
+    padding-bottom: 100px;
+    z-index: 100;
+
     .grid-item {
       position: relative;
 
@@ -60,6 +63,20 @@
         position: absolute;
         right: 10px;
       }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -44px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 250px;
+      height: 130px;
+      background-image: url("/images/gif/point-down.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 }

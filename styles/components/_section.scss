@@ -1,0 +1,65 @@
+.section {
+  padding: 50px 0;
+  opacity: 0;
+  transition: 1s opacity;
+  transform: translateY(-30px);
+
+  &.active {
+    opacity: 1;
+    transition-delay: 0.5s;
+    transform: translateY(0px);
+  }
+
+  &--dark {
+    background-color: #ececec;
+  }
+
+  &--offer {
+    text-align: center;
+
+    .grid-item {
+      max-width: 450px;
+      margin: 0 auto;
+      text-align: center;
+      opacity: 0;
+      transition: 0.5s;
+      transition-delay: 0.5s;
+      transform: translateY(-30px);
+    }
+
+    &.active {
+      .grid-item {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &--about {
+    .grid-item {
+      position: relative;
+
+      ul {
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+        flex-wrap: wrap;
+        width: 100%;
+
+        li {
+          justify-content: space-between;
+          margin-right: 20px;
+
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+
+      .icon-ironhack {
+        position: absolute;
+        right: 10px;
+      }
+    }
+  }
+}

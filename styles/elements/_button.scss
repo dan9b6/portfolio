@@ -1,0 +1,17 @@
+.btn {
+  padding: 10px 15px;
+  background-color: $c-secondary;
+  width: fit-content;
+  display: block;
+  margin-top: 20px;
+  color: $c-primary;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.25s;
+
+  &:hover {
+    background-color: $c-primary;
+    color: $c-white;
+  }
+}

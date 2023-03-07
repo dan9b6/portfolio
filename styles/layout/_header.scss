@@ -1,0 +1,71 @@
+.header {
+  padding: 10px 0;
+  margin-bottom: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &-links {
+    align-self: center;
+    display: flex;
+    justify-self: end;
+  }
+
+  &-toggle {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+  }
+
+  &-nav {
+    display: none;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: $c-primary;
+      }
+    }
+  }
+
+  &-logo {
+    font-size: 4rem;
+    font-weight: bold;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    color: $c-primary;
+
+    &:hover {
+      .header-letter {
+        span {
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &-letter {
+    position: relative;
+    margin-right: 10px;
+    line-height: 1;
+    span {
+      position: absolute;
+      left: 8px;
+      bottom: 2px;
+      color: $c-secondary;
+      transition: 0.25s;
+    }
+  }
+}

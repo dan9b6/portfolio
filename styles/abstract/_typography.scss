@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  text-decoration: underline;
+  text-decoration-color: $c-secondary;
+}
+
+p {
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+@media (min-width: $container-sm) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}

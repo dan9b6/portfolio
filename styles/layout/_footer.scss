@@ -1,0 +1,30 @@
+.footer {
+  background-color: $c-primary;
+  text-align: center;
+  margin-top: auto;
+
+  &-top {
+    padding: 25px 0;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin: 0 8px;
+
+        a {
+          color: $c-white;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    background-color: $c-secondary;
+    padding: 10px 0;
+    font-weight: bold;
+  }
+}

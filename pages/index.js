@@ -122,6 +122,18 @@ export default function Home() {
       <Section className="dark">
         <ProjectList title={`Check out the projects I have worked on!`}>
           <ProjectPane
+            href="https://junipereducation.org/"
+            alt="Juniper Education Logo"
+            src="junip.svg"
+            className="theme--jp"
+          />
+          <ProjectPane
+            href="https://www.tenantshub.co.uk/"
+            alt="Tenants Hub Logo"
+            src="th.png"
+            className="theme--th"
+          />
+          <ProjectPane
             href="https://www.paymentshield.co.uk/"
             alt="Payment Shield Logo"
             src="ps.svg"
@@ -170,16 +182,22 @@ export default function Home() {
             className="theme--afi"
           />
           <ProjectPane
-            href="https://marisolcorona.com/"
-            alt="Marisol Corona Logo"
-            src="ms.png"
-            className="theme--ms"
-          />
-          <ProjectPane
             href="https://www.atlantagroup.co.uk/"
             alt="Atlanta Group Logo"
             src="atg.png"
             className="theme--atg"
+          />
+          <ProjectPane
+            href="https://victorydentures.co.uk/"
+            alt="Victory Dentures Logo"
+            src="vic.png"
+            className="theme--afi"
+          />
+          <ProjectPane
+            href="https://marisolcorona.com/"
+            alt="Marisol Corona Logo"
+            src="ms.png"
+            className="theme--ms"
           />
           <ProjectPane
             href="https://www.carolenash.com/"

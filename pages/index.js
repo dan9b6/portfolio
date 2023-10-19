@@ -97,7 +97,7 @@ export default function Home() {
       <Banner />
       <Section className="offer">
         <div className="container">
-          <h2>What can I offer to Talk Think Do?</h2>
+          <h2>What can I offer to Beep?</h2>
           <div className="grid grid-3">
             {offer.map((item, index) => (
               <div className="grid-item" key={index}>

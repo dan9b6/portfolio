@@ -33,6 +33,33 @@ export default function Home() {
     window.addEventListener("scroll", initAnimation(sections));
   }, []);
 
+  const offer = [
+    {
+      img: {
+        src: "/images/gif/sign.gif",
+        alt: "Sign guy gif",
+      },
+      title: "I'm a great communicator!",
+      desc: "I really enjoy working amongst a team of motivated people. I consider myself to be a team player and always have time for my fellow professional - whether that is tackling a problem together or learning from them.",
+    },
+    {
+      img: {
+        src: "/images/gif/enthusiasm.gif",
+        alt: "Enthusastic guy gif",
+      },
+      title: "I'm enthusiastic!",
+      desc: "I am always willing to take on new challenges and give it my all. This is something I am incredibly passionate about. The learning curve in this industry is never ending, which is why this sector excites me.",
+    },
+    {
+      img: {
+        src: "/images/gif/bulb.gif",
+        alt: "Lightbulb guy gif",
+      },
+      title: "I love problem solving!",
+      desc: "Nothing is more rewarding then solving a problem. Day to day - I enjoy tackling these problems and have a good eye for identifying the underlying issue.",
+    },
+  ];
+
   return (
     <>
       <Head>
@@ -70,52 +97,20 @@ export default function Home() {
       <Banner />
       <Section className="offer">
         <div className="container">
-          <h2>What can I offer to Juniper?</h2>
+          <h2>What can I offer to Beep?</h2>
           <div className="grid grid-3">
-            <div className="grid-item">
-              <Image
-                src={`/images/gif/sign.gif`}
-                alt={`Sign guy gif`}
-                width={250}
-                height={250}
-              />
-              <h3>I{`'`}m a great communicator!</h3>
-              <p>
-                I really enjoy working amongst a team of motivated people. I
-                consider myself to be a team player and always have time for my
-                fellow professional - whether that is tackling a problem
-                together or learning from them.
-              </p>
-            </div>
-            <div className="grid-item">
-              <Image
-                src={`/images/gif/enthusiasm.gif`}
-                alt={`Enthusastic guy gif`}
-                width={250}
-                height={250}
-              />
-              <h3>I{`'`}m enthusiastic!</h3>
-              <p>
-                I am always willing to take on new challenges and give it my
-                all. This is something I am incredibly passionate about. The
-                learning curve in this industry is never ending, which is why
-                this sector excites me.
-              </p>
-            </div>
-            <div className="grid-item">
-              <Image
-                src={`/images/gif/bulb.gif`}
-                alt={`Lightbulb guy gif`}
-                width={250}
-                height={250}
-              />
-              <h3>I love problem solving!</h3>
-              <p>
-                Nothing is more rewarding then solving a problem. Day to day - I
-                enjoy tackling these problems and have a good eye for
-                identifying the underlying issue.
-              </p>
-            </div>
+            {offer.map((item, index) => (
+              <div className="grid-item" key={index}>
+                <Image
+                  src={item.img.src}
+                  alt={item.img.alt}
+                  width={250}
+                  height={250}
+                />
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </Section>
@@ -472,14 +467,30 @@ export default function Home() {
           <TimeLineItem
             src={`/images/timeline/appius-logo.svg`}
             alt={`Appius Logo`}
-            title={"2022 - Current"}
+            title={"2021 - 2023"}
             contain
           >
             <p>
               I started my first web agency role at Appius. During my time at
-              Appius, I have been exposed to a number of projects. During my
-              time here, my focus with Appius has been HTML, SCSS, Javascript
+              Appius, I was exposed to a number of projects. During my time
+              there, my tech stack mainly consisted of HTML, SCSS, Javascript
               and Vue.js.
+            </p>
+          </TimeLineItem>
+          <TimeLineItem
+            src={`/images/timeline/jp-logo.svg`}
+            alt={`Juniper Logo`}
+            title={"2023 - Current"}
+            contain
+          >
+            <p>
+              During my time at Juniper, I have been working on an application
+              that is provided to teachers, parents and stakeholders. My tech
+              stack at Juniper is HTML, CSS, Vue JS, Ruby on Rails, Stimulus JS
+              etc. A huge focus on my time here is around making the application
+              mobile responsive with high levels of accessibility. I also liase
+              and work with the design team using Figma, work with Product
+              Owners and other developers.
             </p>
           </TimeLineItem>
         </TimeLineList>

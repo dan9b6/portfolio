@@ -206,6 +206,13 @@ body {
   padding: 1rem 1rem;
   background-color: #1dd3b0;
   color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+.highlight h1 {
+  margin-bottom: 0;
 }
 
 .highlight-bounce {
